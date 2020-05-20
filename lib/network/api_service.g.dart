@@ -79,7 +79,7 @@ class _ApiService implements ApiService {
     final queryParameters = <String, dynamic>{};
     final _data = <String, dynamic>{};
     final Response<Map<String, dynamic>> _result = await _dio.request(
-        '{id}/datastreams?param_ids={pId}&start={sTime}&end=&limit=100&sort=ASC',
+        '$id/datastreams?param_ids=$pId&start=$sTime&end=&limit=100&sort=ASC',
         queryParameters: queryParameters,
         options: RequestOptions(
             method: 'GET',

@@ -32,5 +32,5 @@ abstract class ApiService {
 
   @GET("{id}/datastreams?param_ids={pId}&start={sTime}&end=&limit=100&sort=ASC")
   Future<DeviceDataList> getDataPoint(
-      @Path('id' 'pId') int id, int pId, int sTime);
+      @Path('id') int id, @Path('pId') int pId, @Path('sTime') int sTime);
 }
